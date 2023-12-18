@@ -76,18 +76,21 @@ I have learned how to:
 * Aframe aleady has many shapes that are saved in the site.
 * codechanges- is very helpful to get/code new shapes && new colors
 * I can also add new environments using codechanges.
-
-I looked at blogs and projects to understand other things I can do with a-frame.
-
-[One of the Blogs ](https://markpescecodex.com/we5/na.html)
-[Blogs ](https://aframe.io/blog/newsletter2/)
-
-
-The project that I have taken inspiration from is
-[Projects](https://www.kodub.com/apps/planetsbyearth)
+* I looked at blogs and projects to understand other things I can do with a-frame.
+* [One of the Blogs ](https://markpescecodex.com/we5/na.html)
+* [Blogs ](https://aframe.io/blog/newsletter2/)
+* The project that I have taken inspiration from is
+* [Projects](https://www.kodub.com/apps/planetsbyearth)
 
 
 
+12/18/2023
+
+* My partner Shelly and I had a disscustion about what we have been working on and what we should work on.
+* In our discussion we decided that I will learn about the animation
+* Shelly will learn the component laser-control.
+* Shelly and I have decided that we want to make our freedom-project will look like.
+* We will be focusing on tinkering with the components.
 
 
 <!--

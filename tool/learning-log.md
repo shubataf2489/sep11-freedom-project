@@ -46,17 +46,43 @@ One thing I realized while exploring the code is that
          color:#f00">
          </a-entity>
 
-``
+```
 
 The notes are always 1-5 words, it’s short and simple but clear. Moving forward I’m going to keep that in mind. Without even knowing much about the vocabulary that is used, I can already tell that this code is for the remote console that changes color when you shoot.
 
 
 11/10/2023:
 
-* I cloned theA -Frame (A-Blast) project and attempted to create different levels, a scoring system, and reduce the difficulty.
+* I cloned the A -Frame (A-Blast) project and attempted to create different levels, a scoring system, and reduce the difficulty.
 * I also aimed to change the background when the levels increases, but I found  identify the code for the background.
 * After a few mistakes, I eventually located the code responsible for the background. Next I tried to makes a scoring system, but it didn't function as expected. I had difficulty figuring out how to add a score without the other parts of the code failing.
-*Thus I couldn't  make the background change when the player went to the next  level, as I intended for the level transition to occur after the player successfully shot down 5 of the sprites.
+* Thus I couldn't  make the background change when the player went to the next  level, as I intended for the level transition to occur after the player successfully shot down 5 of the sprites.
+
+
+
+
+
+11/17/2023
+
+Followed the tutorial https://www.youtube.com/watch?v=y5SZCYT0Zwo
+
+From the video I have learned how to:
+
+I have learned how to:
+* make the block color clear ( I have to use transparency and opacity)
+* how to make the shape bend
+* how to make the shape rotate
+* I learned that the numbers need " " around them.
+* Aframe aleady has many shapes that are saved in the site.
+* codechanges- is very helpful to get/code new shapes && new colors
+* I can also add new environments using codechanges.
+
+
+
+
+
+
+
 
 
 <!--

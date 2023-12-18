@@ -77,9 +77,14 @@ I have learned how to:
 * codechanges- is very helpful to get/code new shapes && new colors
 * I can also add new environments using codechanges.
 
+I looked at blogs and projects to understand other things I can do with a-frame.
+
+[One of the Blogs ](https://markpescecodex.com/we5/na.html)
+[Blogs ](https://aframe.io/blog/newsletter2/)
 
 
-
+The project that I have taken inspiration from is
+[Projects](https://www.kodub.com/apps/planetsbyearth)
 
 
 

@@ -73,7 +73,8 @@ My partner and I are using a-frame  because we want to make a video game that is
 
 ## skill
 Organization: I had to organize my code so it was clear. Organizing the code was really important because I was learning something new. Organization was important for me to undertsand what each code did and if I had a bug. The main thing I focused on was indexation to organize my code better. 
-research/Growth mindset: I had to incorporate a growth mindset because I would have to research a lot and for that I would need patience to able able to research. Following through the tutorial was also a hassle because there were many new things I learned at the same time.
+
+Research/Growth mindset: I had to incorporate a growth mindset because I would have to research a lot and for that I would need patience to able able to research. Following through the tutorial was also a hassle because there were many new things I learned at the same time.
 
 
 

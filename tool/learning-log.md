@@ -86,7 +86,7 @@ I have learned how to:
 * Shelly will learn the component laser-control.
 * Shelly and I have decided that we want to make our freedom-project will look like.
 * We will be focusing on tinkering with the components.
-
+* I learned that A-Frame was built based on three. js, a JavaScript library that enables the creation of 3D content on the Web.
 
 <!--
 * Links you used today (websites, videos, etc)

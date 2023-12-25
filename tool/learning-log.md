@@ -87,7 +87,38 @@ I have learned how to:
 * Shelly and I have decided that we want to make our freedom-project will look like.
 * We will be focusing on tinkering with the components.
 * I learned that A-Frame was built based on three. js, a JavaScript library that enables the creation of 3D content on the Web.
-
+* while I was learning my component I stumbled upon reflextion
+* I wanted to learn reflection
+* Thus I remixed the started code that Aframe gave me and the code to enhance the reflextion of objects
+* The code was
+    ```js <a-scene reflection="directionalLight:a-light#dirlight;"></a-scene>
+	<a-light id="dirlight" intensity="1" light="castShadow:true;type:directional" position="1 1 1"></a-light>
+   ```
+ * To my surprize the code didn't effect tne shapes at all.
+ * I still intend to try it on my code later to see if it will change anything.
+ * Some things I learned while learning about animations are:
+ * boolean values where the to value will be applied at the end of the animation. Like property: visible; from: false; to: true; dur: 1.
+     ```js 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animating on Events - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #FAFAFA" environment="preset: forest">
+      <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: #box"></a-entity>
+      
+      <a-entity id="box" geometry="primitive: box" material="color: red" position="0 1.8 -3" rotation="0 30 0"
+                animation__mouseenter="property: components.material.material.color; type: color; from: red; to: blue; startEvents: mouseenter; dur: 500"
+                animation__mouseleave="property: components.material.material.color; type: color; from: blue; to: red; startEvents: mouseleave; dur: 500"
+    </a-scene>
+  </body>
+</html>
+   ```
+* animation is really cool because you can change/ do many things like changing the color when you change the directions.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

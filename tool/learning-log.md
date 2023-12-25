@@ -62,7 +62,7 @@ The notes are always 1-5 words, it’s short and simple but clear. Moving forwar
 
 
 
-11/17/2023
+11/17/2023-12/19/23
 
 Followed the tutorial https://www.youtube.com/watch?v=y5SZCYT0Zwo
 
@@ -81,11 +81,6 @@ I have learned how to:
 * [Blogs ](https://aframe.io/blog/newsletter2/)
 * The project that I have taken inspiration from is
 * [Projects](https://www.kodub.com/apps/planetsbyearth)
-
-
-
-12/18/2023
-
 * My partner Shelly and I had a disscustion about what we have been working on and what we should work on.
 * In our discussion we decided that I will learn about the animation
 * Shelly will learn the component laser-control.

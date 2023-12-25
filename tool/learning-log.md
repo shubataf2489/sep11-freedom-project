@@ -98,8 +98,9 @@ I have learned how to:
  * I still intend to try it on my code later to see if it will change anything.
  * Some things I learned while learning about animations are:
  * boolean values where the to value will be applied at the end of the animation. Like property: visible; from: false; to: true; dur: 1.
-     ```js 
-<html>
+
+
+     ```js <html>
   <head>
     <meta charset="utf-8">
     <title>Animating on Events - A-Frame</title>
@@ -117,7 +118,7 @@ I have learned how to:
     </a-scene>
   </body>
 </html>
-   ```
+ ```
 * animation is really cool because you can change/ do many things like changing the color when you change the directions.
 <!--
 * Links you used today (websites, videos, etc)

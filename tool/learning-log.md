@@ -120,6 +120,58 @@ I have learned how to:
 * animation is really cool because you can change/ do many things like changing the color when you change the directions.
 
 
+11/25/2023
+Dec 25 
+Tinkering on replit
+- all vr in aframe  starts with a dash
+- Ex: <a-...>
+- if you want to add attributes you have to put in the  <a-...>
+- when adding an attributes put the thing then = then quotions and  number then ending quotation.
+- Ex: <a-box color="cyan">
+- By default the postion is always " 0 0 0"
+- you can change the postion by typing  <a-plane color="cyan" width="4" height="4" rotation="-90 0 0" postion="0 0 -4">
+
+-number 1= right
+-number 2= left
+-number 3= distance
+-radius="1.25"
+* Radius sets the size
+* the bigger the num the bigger the shape
+* You need color or else it's going to be white and you won't be able to see anything.
+  
+ ```html
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Tinkering with VR</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  
+</head>
+
+<body>
+
+  <a-scene> 
+
+    <a-plane color="cyan" width="4" height="4" rotation="-90 0 0" position="0 0 -4"></a-plane>
+<a-box color="purple" position="-1 0.5 -2" rotation="0 45 0" ></a-box>
+      <a-sphere position="0 1.24 -5" radius="-1.25" color="pink"></a-sphere>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="2" color="blue"></a-cylinder>
+  </a-scene>
+</body>
+
+</html>
+ ```
+
+<!--
+This script places a badge on your repl's full-browser view back to your repl's cover
+page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+teal, blue, blurple, magenta, pink!
+-->
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc

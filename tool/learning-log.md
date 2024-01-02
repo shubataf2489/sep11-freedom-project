@@ -122,7 +122,7 @@ I have learned how to:
 * animation is really cool because you can change/ do many things like changing the color when you change the directions.
 
 
-### 11/25/2023
+11/25/2023
  
 Tinkering on replit
 - all vr in aframe  starts with a dash

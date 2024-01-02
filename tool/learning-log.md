@@ -91,8 +91,11 @@ I have learned how to:
 * I wanted to learn reflection
 * Thus I remixed the started code that Aframe gave me and the code to enhance the reflextion of objects
 * The code was
-    ```js <a-scene reflection="directionalLight:a-light#dirlight;"></a-scene>
+    ```js
+
+    <a-scene reflection="directionalLight:a-light#dirlight;"></a-scene>
 	<a-light id="dirlight" intensity="1" light="castShadow:true;type:directional" position="1 1 1"></a-light>
+    
    ```
  * To my surprize the code didn't effect tne shapes at all.
  * I still intend to try it on my code later to see if it will change anything.
@@ -100,7 +103,9 @@ I have learned how to:
  * boolean values where the to value will be applied at the end of the animation. Like property: visible; from: false; to: true; dur: 1.
 
 
-     ```js <head>
+     ```js
+
+     <head>
     <meta charset="utf-8">
     <title>Animating on Events - A-Frame</title>
     <meta name="description" content="Hello, WebVR! • A-Frame">

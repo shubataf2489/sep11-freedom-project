@@ -103,9 +103,7 @@ I have learned how to:
  * boolean values where the to value will be applied at the end of the animation. Like property: visible; from: false; to: true; dur: 1.
 
 
-     ```js
-
-     <head>
+     ```js <head>
     <meta charset="utf-8">
     <title>Animating on Events - A-Frame</title>
     <meta name="description" content="Hello, WebVR! • A-Frame">
@@ -120,10 +118,7 @@ I have learned how to:
                 animation__mouseenter="property: components.material.material.color; type: color; from: red; to: blue; startEvents: mouseenter; dur: 500"
                 animation__mouseleave="property: components.material.material.color; type: color; from: blue; to: red; startEvents: mouseleave; dur: 500"
     </a-scene>
-  </body>
-
-  
-  ```
+  </body> ```
 
   
 * animation is really cool because you can change/ do many things like changing the color when you change the directions.

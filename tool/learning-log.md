@@ -121,14 +121,16 @@ I have learned how to:
   
 * animation is really cool because you can change/ do many things like changing the color when you change the directions.
 
------
+
 ### 11/25/2023
-Dec 25 
+ 
 Tinkering on replit
 - all vr in aframe  starts with a dash
 - Ex: <a-...>
 - if you want to add attributes you have to put in the  <a-...>
 - when adding an attributes put the thing then = then quotions and  number then ending quotation.
+-  After a few mistakes, I eventually located the code responsible for the background. Next I tried to makes a scoring system, but it didn't function as expected. I had difficulty figuring out how to add a score without the other parts of the code failing.
+- Thus I couldn't  make the background change when the player went to the next  level, as I intended for the level transition to occur after the player successfully shot down 5 of the sprites.
 - Ex: <a-box color="cyan">
 - By default the postion is always " 0 0 0"
 - you can change the postion by typing  <a-plane color="cyan" width="4" height="4" rotation="-90 0 0" postion="0 0 -4">

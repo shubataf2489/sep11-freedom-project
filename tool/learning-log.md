@@ -172,12 +172,19 @@ Tinkering on replit
 </html>
  ```
 Use <a-entity> to create entities within the scene. Entities are the building blocks of your VR world.
+
 Primitive Elements:
 A-Frame provides primitive elements like <a-box>, <a-sphere>, <a-cylinder>, etc., to easily create basic shapes in your scene.
+
+
 Components:
 Components are attributes that define the appearance, behavior, or functionality of entities. Use them to add interactivity, animations, and more.
+
+
 Animations:
 A-Frame supports animations to bring your VR scene to life. Use the <a-animation> element or the animation component on entities.
+
+
 Place a camera (<a-camera>) within your scene to define the viewpoint for users.
 
 

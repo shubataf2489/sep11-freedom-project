@@ -188,8 +188,8 @@ A-Frame supports animations to bring your VR scene to life. Use the <a-animation
 Place a camera (<a-camera>) within your scene to define the viewpoint for users.
 
 
-Jan 8,2023
- *I learned about different components.
+#### Jan 8,2023
+ * I learned about different components.
  * I disscused with my partner about our next steps
  * we liked the component laser
  * We want to use laser in our project hopefully.

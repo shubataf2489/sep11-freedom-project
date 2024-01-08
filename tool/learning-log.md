@@ -188,9 +188,20 @@ A-Frame supports animations to bring your VR scene to life. Use the <a-animation
 Place a camera (<a-camera>) within your scene to define the viewpoint for users.
 
 
-
-
- 
+Jan 8,2023
+ *I learned about different components.
+ * I disscused with my partner about our next steps
+ * we liked the component laser
+ * We want to use laser in our project hopefully.
+* Like the envMap and sphericalEnvMap properties define what environment the material reflects. The clarity of the environment reflection depends on the metalness, and roughness properties.
+*There are things like video loops
+* the video texture loops or autoplays depends on the video element used to create the texture. If we simply pass a URL instead of creating and passing a video element, then the texture will loop and autoplay by default. To specify otherwise, create a video element in the asset management system, and pass a selector for the id attribute (e.g., #my-video):
+* I wanted to use Transparency to for the indows of the aircafts and front views but I learned that:
+*" Transparency and alpha channels are tricky in 3D graphics. If you are having issues where transparent materials in the foreground do not composite correctly over materials in the background, the issues are probably due to underlying design of the OpenGL compositor (which WebGL is an API for)."
+* But In an ideal scenario, transparency in A-Frame would “just work”.
+*The sphericalEnvMap property takes a single spherical mapped texture. Of the kind you would assign to a <a-sky>.
+* We can use a <canvas> as a texture source.
+*Unlike textures, the envMap property takes a cubemap, six images put together to form a cube. The cubemap wraps around the mesh and applied as a texture.
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover
 page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,

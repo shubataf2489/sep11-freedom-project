@@ -202,6 +202,17 @@ Place a camera (<a-camera>) within your scene to define the viewpoint for users.
 *The sphericalEnvMap property takes a single spherical mapped texture. Of the kind you would assign to a <a-sky>.
 * We can use a <canvas> as a texture source.
 *Unlike textures, the envMap property takes a cubemap, six images put together to form a cube. The cubemap wraps around the mesh and applied as a texture.
+
+
+02/16/2024
+Some measures that A-Frame takes to minimize overhead include:
+-the <iframe> will not display in VR nor can it integrate with the scene.
+Making setAttribute synchronous with a reduced code path. Modifying an entity’s position via setAttribute('position', {x: 1, y: 2, z: 3}) almost directly touches the underlying three.js objects. The overhead involves comparing new data to old data to determine whether a change needs to be triggered and invoking lifecycle handlers.
+This makes most operations done in memory, a tiny bit similar to Virtual DOM.
+Keeping everything under a single requestAnimationFrame and letting components hook into a single global render loop via the tick handler.
+
+for a frame you need to jse techniques used in the 3D and game industry (e.g., geometry instancing, level-of-detail, object pooling
+
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover
 page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,

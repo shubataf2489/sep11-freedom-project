@@ -205,12 +205,29 @@ Place a camera (<a-camera>) within your scene to define the viewpoint for users.
 
 
 02/16/2024
-Some measures that A-Frame takes to minimize overhead include:
--the <iframe> will not display in VR nor can it integrate with the scene.
-Making setAttribute synchronous with a reduced code path. Modifying an entity’s position via setAttribute('position', {x: 1, y: 2, z: 3}) almost directly touches the underlying three.js objects. The overhead involves comparing new data to old data to determine whether a change needs to be triggered and invoking lifecycle handlers.
-This makes most operations done in memory, a tiny bit similar to Virtual DOM.
-Keeping everything under a single requestAnimationFrame and letting components hook into a single global render loop via the tick handler.
 
+
+Some measures that A-Frame takes to minimize overhead include:
+
+
+-the <iframe> will not display in VR nor can it integrate with the scene.
+
+
+Making setAttribute synchronous with a reduced code path. Modifying an entity’s position via setAttribute('position', {x: 1, y: 2, z: 3}) almost directly touches the underlying three.js objects.
+
+The overhead involves comparing new data to old data to determine whether a change needs to be triggered and invoking lifecycle handlers.
+
+
+This makes most operations done in memory, a tiny bit similar to Virtual DOM.
+
+Keeping everythingunder a single requestAnimationFrame and letting components hook into a single global render loop via the tick handler.
+-talk to Shelly about what I learned 
+- Shellt and I agreed to make a demo of our project next week to know what we want to learn about next week.
+- Shelly and I had a disagreement about what we want our next plans to be
+- shelly want to continue learning new componenets
+- I want to make a demo so we know which componenet will be useful for us to learn.
+- shelly and came to the agreement that after this week we will learn how to make a small demo of how we want our project to look like, like a wire frame.
+-A-Frame is a JavaScript framework. 
 for a frame you need to jse techniques used in the 3D and game industry (e.g., geometry instancing, level-of-detail, object pooling
 
 <!--

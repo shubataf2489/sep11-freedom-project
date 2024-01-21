@@ -66,7 +66,34 @@ Through the video I have gotten many insights on how to code on a frame. The mor
 ## Content/Goal:
 
 
-My partner and I are using a-frame  because we want to make a video game that is pleasing to the eye, while being entertaining. Our goal is to make a game that is interesting and relaxing. It may sound ironic that a shooting game can be relaxing but all of the frustration and anger or stress can be let out through playing games. According to the article Do Video Games Reduce Stress? We are going to use games that have already been made through A Frame to take inspiration and eventually make a game that has 360 images where you can move and interact with objects like cars, airplanes and guns. I have decided to create a flying obstacle game using A-Frame. To experiment with my tool, I undertook various tasks.
+My partner and I are using a-frame  because we want to make a video game that is pleasing to the eye, while being entertaining. My  goal is the same as before, it is to make a game that is both entertaining and calming. Ironically, playing a shooting game could help you relieve stress and release all of your frustrations, rage, and tension. The article "Do Video Games Reduce Stress?" claims as much. Using existing A Frame games as a model, we will eventually create a 360-degree interactive game featuring moving and interactable items such as vehicles, aircraft, and firearms. I've made the decision to use A-Frame to construct a flying obstacle game. I performed a number of tasks to test my tool. To better understand how aframe works I made a stater code from scratch to understand what does does what and why it does what. 
+
+```js
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title> Tinkering with VR</title>
+ <link href="style.css" rel="stylesheet" type="text/css" />
+ <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+
+</head>
+
+<body>
+
+ <a-scene> 
+
+   <a-plane color="cyan" width="4" height="8" rotation="-90 0 0" position="0 0 -4"></a-plane>
+   <a-box color="purple" position="-1 0.5 -2" rotation="0 45 0" ></a-box>
+   <a-sphere position="0 1.24 -5" radius="-1.25" color="pink"></a-sphere>
+   <a-cylinder position="1 0.75 -3" radius="0.5" height="2" color="blue"></a-cylinder>
+ </a-scene>
+</body>
+</html>
+```
+
 
 
 

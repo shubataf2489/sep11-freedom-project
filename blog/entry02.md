@@ -7,7 +7,7 @@ Engineering Design Process:
 
 
 
-My current stage in the Engineering Design Process (EDP) is still to better understand my tool and how to utilize it. To better understand my tool I have been reading other people's projects, they were made with an A-frame and their process. I have also been following tutorials  and exploring other projects for ideas. My next step is learning the components are shadow, pool, layers and light.  After that My partner and I plane to make a demo model of our project to see which skilll will be useful to learn.
+My current stage in the Engineering Design Process (EDP) is still to better understand my tool and how to utilize it. To better understand my tool I have been reading other people's projects, they were made with an A-frame and their process. I have also been following tutorials  and exploring other projects for ideas. My next step is learning the components are shadow, pool, layers and light.  After that my partner and I plane to make a demo model of our project to see which skilll will be useful to learn.
 
 
 

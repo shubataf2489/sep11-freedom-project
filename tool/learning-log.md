@@ -204,31 +204,65 @@ Place a camera (<a-camera>) within your scene to define the viewpoint for users.
 *Unlike textures, the envMap property takes a cubemap, six images put together to form a cube. The cubemap wraps around the mesh and applied as a texture.
 
 
-02/16/2024
+01/16/2024
 
 
 Some measures that A-Frame takes to minimize overhead include:
 
-
 -the <iframe> will not display in VR nor can it integrate with the scene.
-
 
 Making setAttribute synchronous with a reduced code path. Modifying an entity’s position via setAttribute('position', {x: 1, y: 2, z: 3}) almost directly touches the underlying three.js objects.
 
 The overhead involves comparing new data to old data to determine whether a change needs to be triggered and invoking lifecycle handlers.
 
-
 This makes most operations done in memory, a tiny bit similar to Virtual DOM.
 
 Keeping everythingunder a single requestAnimationFrame and letting components hook into a single global render loop via the tick handler.
+
 -talk to Shelly about what I learned 
+
 - Shelly and I agreed to make a demo of our project next week to know what we want to learn about next week.
+  
 - Shelly and I had a disagreement about what we want our next plans to be
+  
 - shelly want to continue learning new componenets
+  
 - I want to make a demo so we know which componenet will be useful for us to learn.
+  
 - shelly and came to the agreement that after this week we will learn how to make a small demo of how we want our project to look like, like a wire frame.
+  
 -A-Frame is a JavaScript framework. 
-for a frame you need to jse techniques used in the 3D and game industry (e.g., geometry instancing, level-of-detail, object pooling
+
+for aframe you need to use techniques used in the 3D and game industry (e.g., geometry instancing, level-of-detail, object pooling.
+
+### 01/22/2024
+
+I'm following the [tutorial on making 3d buildings](https://www.youtube.com/watch?v=5lTAt3HGPSw)
+
+Unfortunately my partner and I became busy with other schoolwork and were able to dedicate our time into making a demo of our project.
+
+In the video I what I learned from the code really interested me because it seems complicated but it only takes 90 sec to do if you learn/undertsand that concept. 
+
+In the video, the youtuber shows how I created a 3D buildings site using Aframe.io and Blender.
+
+In the video the youtuber teaches things like exporting a .glb file, import it into an A-frame project, and adjust the camera and environment lighting.
+
+My partner and I decided to make the demo next term and start fresh.
+
+[tutorial on making animation](https://www.youtube.com/watch?v=ZGk5XlPscsk)
+I learned how to make cars move automatic using aframe.
+
+It is wayy more easier than I thought it would be to code animations.
+
+I learned that I need to use animation_up, animation_drive , animation_down based on what animations I wanted.
+
+Although maing a floating boat that seems like it's naturally is going up and down is really complicated. The hardest thing to do is getting the timing right to make the boat go up and down.
+
+I also learned how to make the boat seem a though it is tiliting left and right.
+
+To make an order you can use timeline to pick a order that is doing 2 animation at the same time and choose which animation should be first and last.
+
+From this video I was thing I can make it seem as though there is wind flowing through the trees when the aircraft is used.
 
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover

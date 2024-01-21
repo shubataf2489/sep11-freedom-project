@@ -93,7 +93,40 @@ My partner and I are using a-frame  because we want to make a video game that is
 </body>
 </html>
 ```
+FRom making my own stater code I learned the following:
 
+* all vr in aframe starts with a dash
+  
+Ex: <a-...>
+
+* If you want to add attributes you have to put in the <a-...>
+  
+* When adding an attributes put the thing then = then quotions and number then ending quotation.
+  
+* After a few mistakes, I eventually located the code responsible for the background. Next I tried to makes a scoring system, but it didn't function as expected. I had difficulty figuring out how to add a score without the other parts of the code failing.
+  
+* Thus I couldn't make the background change when the player went to the next level, as I intended for the level transition to occur after the player successfully shot down 5 of the sprites.
+  
+* Ex:
+  By default the postion is always " 0 0 0"
+  
+* you can change the postion by typing
+  
+-number 1= right -number 2= left -number 3= distance -radius="1.25"
+
+* Radius sets the size
+* the bigger the num the bigger the shape
+* You need color or else it's going to be white and you won't be able to see anything.
+
+* Use to create entities within the scene. Entities are the building blocks of your VR world.
+
+* Primitive Elements: A-Frame provides primitive elements like , , , etc., to easily create basic shapes in your scene.
+
+* Components: Components are attributes that define the appearance, behavior, or functionality of entities. Use them to add interactivity, animations, and more.
+
+* Animations: A-Frame supports animations to bring your VR scene to life. Use the element or the animation component on entities.
+
+* Place a camera () within your scene to define the viewpoint for users.
 
 
 

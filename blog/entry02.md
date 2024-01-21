@@ -4,18 +4,11 @@
 
 Engineering Design Process:
 
-
-
-
 My current stage in the Engineering Design Process (EDP) is still to better understand my tool and how to utilize it. To better understand my tool I have been reading other people's projects, they were made with an A-frame and their process. I have also been following tutorials  and exploring other projects for ideas. My next step is learning the components are shadow, pool, layers and light.  After that my partner and I plane to make a demo model of our project to see which skilll will be useful to learn.
 
 
 
 As I have mentioned I cloned the A-Blast project into my IDE after I have done the tinkering with A-Blast I have moved on to other methods. [Tutorial ](https://www.youtube.com/watch?v=y5SZCYT0Zwo)
-
-
-
-
 
 
 In the blogs people talk about their projects and in some they show the project, in others they talk about their process and struggles. My personal favorite story is because I want to make something similar to it
@@ -45,11 +38,6 @@ Through the video I have gotten many insights on how to code on a frame. The mor
 
 
 
-
-
-![](car.png)
-
-
 #### Results
 ![](zoom.png)
 
@@ -57,11 +45,12 @@ Through the video I have gotten many insights on how to code on a frame. The mor
 #### mid-step
 
 
-![](code.png)
+![](car.png)
 
 
 #### Code
 
+![](code.png)
 
 ## Content/Goal:
 
@@ -128,7 +117,7 @@ Ex: <a-...>
 
 * Place a camera () within your scene to define the viewpoint for users.
 
-
+After learning about these tings my understanding of Aframe grew stronger. I am planning on making an airplane just like I made a car but I feel as though making a realistic airplane with aframe will be hard but I aspire to do so.
 
 ## skill
 Organization: I had to organize my code so it was clear. Organizing the code was really important because I was learning something new. Organization was important for me to undertsand what each code did and if I had a bug. The main thing I focused on was indexation to organize my code better. 

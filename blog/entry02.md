@@ -2,7 +2,7 @@
 #### 11/17/2023
 
 
-Engineering Design Process:
+#### Engineering Design Process/ next steps:
 
 My current stage in the Engineering Design Process (EDP) is still to better understand my tool and how to utilize it. To better understand my tool I have been reading other people's projects, they were made with an A-frame and their process. I have also been following tutorials  and exploring other projects for ideas. My next step is learning the components are shadow, pool, layers and light.  After that my partner and I plane to make a demo model of our project to see which skilll will be useful to learn.
 
@@ -52,11 +52,12 @@ Through the video I have gotten many insights on how to code on a frame. The mor
 
 ![](code.png)
 
-## Content/Goal:
+## Content:
 
 
-My partner and I are using a-frame  because we want to make a video game that is pleasing to the eye, while being entertaining. My  goal is the same as before, it is to make a game that is both entertaining and calming. Ironically, playing a shooting game could help you relieve stress and release all of your frustrations, rage, and tension. The article "Do Video Games Reduce Stress?" claims as much. Using existing A Frame games as a model, we will eventually create a 360-degree interactive game featuring moving and interactable items such as vehicles, aircraft, and firearms. I've made the decision to use A-Frame to construct a flying obstacle game. I performed a number of tasks to test my tool. To better understand how aframe works I made a stater code from scratch to understand what does does what and why it does what. 
+My partner and I are using A-frame  because we want to make a video game that is pleasing to the eye, while being entertaining. My  goal is the same as before, it is to make a game that is both entertaining and calming. Ironically, playing a shooting game could help you relieve stress and release all of your frustrations, rage, and tension. The article "Do Video Games Reduce Stress?" claims as much. Using existing A Frame games as a model, we will eventually create a 360-degree interactive game featuring moving and interactable items such as vehicles, aircraft, and firearms. I've made the decision to use A-Frame to construct a flying obstacle game. I performed a number of tasks to test my tool. To better understand how aframe works I made a stater code from scratch to understand what does does what and why it does what. I am scared that my partner and I won't be able to make a shooting game, so we decided that our back up plan will be making a pov game, a little similar to minecraft but instead their will be stages that you have to pass and not build anything.
 
+### What I learned:
 ```js
 <!DOCTYPE html>
 <html>
@@ -117,12 +118,17 @@ Ex: <a-...>
 
 * Place a camera () within your scene to define the viewpoint for users.
 
-After learning about these tings my understanding of Aframe grew stronger. I am planning on making an airplane just like I made a car but I feel as though making a realistic airplane with aframe will be hard but I aspire to do so.
+### Future Goals:
+After learning about these things my understanding of Aframe grew stronger. I am planning on making an airplane just like I made a car but I feel as though making a realistic airplane with aframe will be hard but I aspire to do so. I want to learn making setAttribute synchronous with a reduced code path. Modifying an entity’s position via setAttribute('position', {x: 1, y: 2, z: 3}) almost directly touches the underlying three.js objects. I also want follow another tutorial on [Creating a 3D Buildings Site](https://youtu.be/5lTAt3HGPSw?si=PbTk6RiKbAWMO2xr). This code really interested me because it seems complicated but it only takes 90sec to do if you learn/undertsand that concept. In the video, the youtuber shows  how I created a 3D buildings site using Aframe.io and Blender. In the video the youtuber teaches things like exporting  a .glb file, import it into an A-frame project, and adjust the camera and environment lighting. 
 
-## skill
+
+
+## Skill
 Organization: I had to organize my code so it was clear. Organizing the code was really important because I was learning something new. Organization was important for me to undertsand what each code did and if I had a bug. The main thing I focused on was indexation to organize my code better. 
 
 Research/Growth mindset: I had to incorporate a growth mindset because I would have to research a lot and for that I would need patience to able able to research. Following through the tutorial was also a hassle because there were many new things I learned at the same time.
+
+
 
 
 

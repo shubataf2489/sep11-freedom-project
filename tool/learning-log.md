@@ -222,7 +222,7 @@ This makes most operations done in memory, a tiny bit similar to Virtual DOM.
 
 Keeping everythingunder a single requestAnimationFrame and letting components hook into a single global render loop via the tick handler.
 -talk to Shelly about what I learned 
-- Shellt and I agreed to make a demo of our project next week to know what we want to learn about next week.
+- Shelly and I agreed to make a demo of our project next week to know what we want to learn about next week.
 - Shelly and I had a disagreement about what we want our next plans to be
 - shelly want to continue learning new componenets
 - I want to make a demo so we know which componenet will be useful for us to learn.

@@ -254,6 +254,9 @@ I learned how to make cars move automatic using aframe.
 
 It is wayy more easier than I thought it would be to code animations.
 
+
+02/05/2024
+
 I learned that I need to use animation_up, animation_drive , animation_down based on what animations I wanted.
 
 Although maing a floating boat that seems like it's naturally is going up and down is really complicated. The hardest thing to do is getting the timing right to make the boat go up and down.
@@ -263,6 +266,32 @@ I also learned how to make the boat seem a though it is tiliting left and right.
 To make an order you can use timeline to pick a order that is doing 2 animation at the same time and choose which animation should be first and last.
 
 From this video I was thing I can make it seem as though there is wind flowing through the trees when the aircraft is used.
+
+I shared my resources with my partner
+
+I recommended my partner which tutorials to follow
+
+I learned what a [link toan aframe tool](https://www.npmjs.com/package/aframe-supercraft-loader) is helpfu; then making a 3d world.
+
+Things I learned on the website:
+
+includeEnvironment-  include environment (sky, ground, lights).	
+
+includeShadows- can decide whether the mesh should receive and cast shadows.
+
+I learned that I can control the viewer's view point  with selector to <a-asset-item> or URL to Supercraft JSON.	
+
+Inspector tool to get a different view of the scene and see the visual effect of tweaking entities.
+
+The Inspector is similar to the browser’s DOM inspector but tailored for 3D and A-Frame. (Inspecter tool](https://github.com/aframevr/aframe-inspector)
+
+To modify the material of a model, we need to wait for the model to load, and then modify the three.js meshes created from the mode
+
+Sometimes textures just won’t work right off the bat. This is usually because exporters use absolute paths like C:\\Path\To\Model\texture.jpg or /Path/To/Model/texture.jpg 
+
+I helped my partner understand what code she should try doing and practicing more with through a yellkey.
+
+
 
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover

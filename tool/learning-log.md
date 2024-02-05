@@ -255,7 +255,7 @@ I learned how to make cars move automatic using aframe.
 It is wayy more easier than I thought it would be to code animations.
 
 
-02/05/2024
+### 02/05/2024
 
 I learned that I need to use animation_up, animation_drive , animation_down based on what animations I wanted.
 

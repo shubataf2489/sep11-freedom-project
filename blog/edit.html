@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Frame VR Scene with Airplanes</title>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="play-all-model-animations.js"></script>
+    <script>
+      AFRAME.registerComponent('modify-materials', {
+        init: function () {
+          // Wait for model to load.
+          this.el.addEventListener('model-loaded', () => {
+            // Grab the mesh / scene.
+            const obj = this.el.getObject3D('mesh');
+            // Go over the submeshes and modify materials we want.
+            obj.traverse(node => {
+              if (node.name.indexOf('ship') !== -1) {
+                node.material.color.set('red');
+              }
+            });
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <a-scene background="color: #ECECEC">
+      <a-assets>
+        <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
+        <a-asset-item id="airplaneModel" src="plane.jpeg"></a-asset-item>
+      </a-assets>
+
+      <!-- City Model with Animations and Modified Materials -->
+      <a-entity gltf-model="#cityModel" play-all-model-animations modify-materials></a-entity>
+
+      <!-- Airplane Model -->
+      <a-entity gltf-model="#airplaneModel" position="0 2 -5" rotation="0 180 0" scale="0.5 0.5 0.5"></a-entity>
+
+    </a-scene>
+  </body>
+</html>

@@ -3,6 +3,7 @@
 ##### 03/12/24
 
 My current stage in the Engineering Design Process (EDP) is understanding and making a game plan for my game. A little recap of what my project is: a game that uses A-Frame. My partner and I aim to create a stress-relieving shooting game. We plan on making a 3D simulation of our game with stages featuring unique backgrounds. To learn my tool, I had to understand how A-Frame works and the components A-Frame uses. To get a better understanding of my tool (A-Frame), I read documentations made by the developer. I learned many interesting things, such as:
+Although it is hard to find more resources that can teach me about how to use A-frame to make a shooting score or how to shoot. I plan on asking other people on the Aframe slack if they know/have ever made a game that keeps score through Aframe. If that doesn't work out as plan I will try to google for more resource.
 
 * A-Frame is a JavaScript framework.
 

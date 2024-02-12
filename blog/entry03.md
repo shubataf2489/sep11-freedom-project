@@ -148,7 +148,7 @@ According to A-Frame: The `magicleap-controls` component interfaces with the Mag
 
 This will help us since we are planning on making levels in our game.
 
-I also plan on learning the component Text.
+- I also plan on learning the component Text.
 
 According to A-Frame: In 2D web development, text is the most basic thing because the browser’s renderer and layout engine handle everything. In a 3D context, we don’t have those luxuries. The text component renders signed distance field (SDF) font text.
 

@@ -41,7 +41,11 @@ Learning all of these details helped me understand the fundamentals of A-Frame a
 ## CONTENT:
 
  My partner and I are using A-Frame to make a 3D simulation of a game. We want to create a shooting game that can help release pent-up stress from school, work, and etc. Our goal is to make a game that is interesting and relaxing. It may sound ironic that a shooting game can be relaxing, but all of the frustration and anger or stress can be let out through playing games. According to the article [How Do Video Games Reduce Stress?](https://www.healthygamer.gg/blog/do-video-games-reduce-stress#:~:text=When%20we%20play%20a%20video,the%20stresses%20of%20the%20day.), we are going to use games that have already been made through A-Frame to take inspiration and eventually make a game that has 360 images where you can move and interact with objects like cars, airplanes, and guns. We will be using A-Frame to create a 360-degree interactive game featuring moving and interactable items such as vehicles, aircraft, and firearms.
+ 
 While working on researching A-Frame, I came across a really interesting code:
+
+[link-to-the-pre-tinkering](play-all-model-animations-pre.js)
+[link-to-the-after-tinkering](tool/play-all-model-animations-after.js)
 
 ```html
 <!DOCTYPE html>
@@ -83,7 +87,7 @@ While working on researching A-Frame, I came across a really interesting code:
 
 Note: I worked on some mini-projects, but this one was the most recent project and I learned the most from this.
 
-This made a dystopian world with boxes flying in a pattern.
+I changed the code by adding a box that can go up and down and attempt to make a character with a basinet and black eyes. I also used the code I saw before and put it on a cylinder.
 
 When I saw this, I knew I had to make this one of the settings for the game.
 

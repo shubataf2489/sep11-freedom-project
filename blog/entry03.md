@@ -3,6 +3,7 @@
 ##### 03/12/24
 
 My current stage in the Engineering Design Process (EDP) is understanding and making a game plan for my game. A little recap of what my project is: a game that uses A-Frame. My partner and I aim to create a stress-relieving shooting game. We plan on making a 3D simulation of our game with stages featuring unique backgrounds. To learn my tool, I had to understand how A-Frame works and the components A-Frame uses. To get a better understanding of my tool (A-Frame), I read documentations made by the developer. I learned many interesting things, such as:
+Although it is hard to find more resources that can teach me about how to use A-frame to make a shooting score or how to shoot. I plan on asking other people on the Aframe slack if they know/have ever made a game that keeps score through Aframe. If that doesn't work out as plan I will try to google for more resources.
 
 * A-Frame is a JavaScript framework.
 
@@ -37,40 +38,42 @@ Learning all of these details helped me understand the fundamentals of A-Frame a
  - night turning into day
  - create a 3D building site using A-Frame.io and Blender.
 
- These are some of the examples I have seen other A-Frame users create and it intrigued me.
+## CONTENT:
 
+ My partner and I are using A-Frame to make a 3D simulation of a game. We want to create a shooting game that can help release pent-up stress from school, work, and etc. Our goal is to make a game that is interesting and relaxing. It may sound ironic that a shooting game can be relaxing, but all of the frustration and anger or stress can be let out through playing games. According to the article [How Do Video Games Reduce Stress?](https://www.healthygamer.gg/blog/do-video-games-reduce-stress#:~:text=When%20we%20play%20a%20video,the%20stresses%20of%20the%20day.), we are going to use games that have already been made through A-Frame to take inspiration and eventually make a game that has 360 images where you can move and interact with objects like cars, airplanes, and guns. We will be using A-Frame to create a 360-degree interactive game featuring moving and interactable items such as vehicles, aircraft, and firearms.
 While working on researching A-Frame, I came across a really interesting code:
 
 ```html
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <script src="play-all-model-animations.js"></script>
-    <script>
-      AFRAME.registerComponent('modify-materials', {
-        init: function () {
-          // Wait for model to load.
-          this.el.addEventListener('model-loaded', () => {
-            // Grab the mesh / scene.
-            const obj = this.el.getObject3D('mesh');
-            // Go over the submeshes and modify materials we want.
-            obj.traverse(node => {
-              if (node.name.indexOf('ship') !== -1) {
-                node.material.color.set('red');
-              }
-            });
-          });
-        }
-      });
-    </script>
+    <title>Basic Scene with Environment - A-Frame</title>
+    <meta name="description" content="Basic Scene with Environment - A-Frame">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
-    <a-scene background="color: #ECECEC">
+    <!-- Try changing the preset to one of default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, 
+         threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris. -->
+    <!-- See more environment options: https://github.com/feiss/aframe-environment-component#parameters -->
+    <a-scene environment="preset: forest">
       <a-assets>
-        <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
+        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
       </a-assets>
-      <a-entity gltf-model="#cityModel" play-all-model-animations modify-materials></a-entity>
+      
+      <a-box
+        src="#boxTexture"
+        position="0 2 -5"
+        rotation="0 45 45"
+        scale="2 2 2"
+        animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
+        animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
+        animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+      
+      <a-entity text="value: Hello, A-Frame; color: #FAFAFA; width: 5; anchor: align" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-entity>
+      <a-camera>
+        <a-cursor color="#FAFAFA"></a-cursor>
+      </a-camera>
     </a-scene>
   </body>
 </html>
@@ -84,48 +87,33 @@ This made a dystopian world with boxes flying in a pattern.
 
 When I saw this, I knew I had to make this one of the settings for the game.
 
-The way I changed the code was, instead of flying boxes, there were flying airplanes and the setting was the game, but I changed the background because I really liked the dystopian setting. I also stopped the flying boxes.
+The way I changed the code was, take a stater code provided by Aframe and make something interesting by combining both codes. 
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-Frame VR Scene with Airplanes</title>
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <script src="play-all-model-animations.js"></script>
-    <script>
-      AFRAME.registerComponent('modify-materials', {
-        init: function () {
-          // Wait for model to load.
-          this.el.addEventListener('model-loaded', () => {
-            // Grab the mesh / scene.
-            const obj = this.el.getObject3D('mesh');
-            // Go over the submeshes and modify materials we want.
-            obj.traverse(node => {
-              if (node.name.indexOf('ship') !== -1) {
-                node.material.color.set('red');
-              }
-            });
-          });
-        }
-      });
-    </script>
-  </head>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
   <body>
-    <a-scene background="color: #ECECEC">
-      <a-assets>
-        <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
-        <a-asset-item id="airplaneModel" src="plane.jpeg"></a-asset-item>
-      </a-assets>
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"          animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"></a-box>
+></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+       <a-sphere position=".5 1.80 -4" radius=".2" color="#000000"></a-sphere>
+      <a-sphere position="-.5 1.80 -4" radius=".2" color="#000000"></a-sphere>
 
-      <!-- City Model with Animations and Modified Materials -->
-      <a-entity gltf-model="#cityModel" play-all-model-animations modify-materials></a-entity>
+      
+      <a-cylinder src="https://i.imgur.com/mYmmbrp.jpg" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-scene>
+  <a-box color="red" position="0 2 -5" rotation="0 45 " scale="2 2 2"></a-box>
 
-      <!-- Airplane Model -->
-      <a-entity gltf-model="#airplaneModel" position="0 2 -5" rotation="0 180 0" scale="0.5 0.5 0.5"></a-entity>
-
+  
+        <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+       
+</a-scene>
     </a-scene>
   </body>
 </html>
@@ -148,15 +136,13 @@ According to A-Frame: The `magicleap-controls` component interfaces with the Mag
 
 This will help us since we are planning on making levels in our game.
 
-I also plan on learning the component Text.
+- I also plan on learning the component Text.
 
 According to A-Frame: In 2D web development, text is the most basic thing because the browser’s renderer and layout engine handle everything. In a 3D context, we don’t have those luxuries. The text component renders signed distance field (SDF) font text.
 
 Learning the component text will help us make texts move in the game, which is one of our goals.
 
-## CONTENT:
 
- My partner and I are using A-Frame to make a 3D simulation of a game. We want to create a shooting game that can help release pent-up stress from school, work, and etc. Our goal is to make a game that is interesting and relaxing. It may sound ironic that a shooting game can be relaxing, but all of the frustration and anger or stress can be let out through playing games. According to the article [How Do Video Games Reduce Stress?](https://www.healthygamer.gg/blog/do-video-games-reduce-stress#:~:text=When%20we%20play%20a%20video,the%20stresses%20of%20the%20day.), we are going to use games that have already been made through A-Frame to take inspiration and eventually make a game that has 360 images where you can move and interact with objects like cars, airplanes, and guns. We will be using A-Frame to create a 360-degree interactive game featuring moving and interactable items such as vehicles, aircraft, and firearms.
 
 ## Skills
 

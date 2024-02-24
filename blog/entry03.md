@@ -44,8 +44,10 @@ Learning all of these details helped me understand the fundamentals of A-Frame a
  
 While working on researching A-Frame, I came across a really interesting code:
 
-[link-to-the-pre-tinkering](play-all-model-animations-pre.js)
-[link-to-the-after-tinkering](tool/play-all-model-animations-after.js)
+* [link-to-the-pre-tinkering](https://github.com/shubataf2489/sep11-freedom-project/blob/main/tool/play-all-model-animations-pre.js)
+
+
+* [link-to-the-after-tinkering](https://github.com/shubataf2489/sep11-freedom-project/blob/main/tool/play-all-model-animations-after.js)
 
 ```html
 <!DOCTYPE html>

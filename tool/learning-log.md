@@ -292,6 +292,21 @@ Sometimes textures just won’t work right off the bat. This is usually because 
 I helped my partner understand what code she should try doing and practicing more with through a yellkey.
 
 
+02/24/2024
+
+* Learning how to set up a frame componet from scratch 
+[Link to Building a Basic Scene](https://aframe.io/docs/1.5.0/guides/building-a-basic-scene.html)
+[Link to learning aframe html](https://aframe.io/docs/1.5.0/introduction/html-and-primitives.html)
+* Tip: Even if the text is really long try to read it because it's really helpful.
+-  we include <a-scene> in the <body>. <a-scene> will contain every entity in our scene.
+ <a-scene> handles all of the setup that is required for 3D: setting up WebGL, the canvas, camera, lights, 
+
+- Frame uses a right-handed coordinate system. With the default camera direction: positive X-axis extends right, positive Y-axis extends up, and the positive Z-axis extends out of the screen towards us:
+
+
+
+
+ Disclaimer: These are all direct notes I found important from the documentation.
 
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover

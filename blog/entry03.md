@@ -44,35 +44,36 @@ Learning all of these details helped me understand the fundamentals of A-Frame a
 While working on researching A-Frame, I came across a really interesting code:
 
 ```html
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <script src="play-all-model-animations.js"></script>
-    <script>
-      AFRAME.registerComponent('modify-materials', {
-        init: function () {
-          // Wait for model to load.
-          this.el.addEventListener('model-loaded', () => {
-            // Grab the mesh / scene.
-            const obj = this.el.getObject3D('mesh');
-            // Go over the submeshes and modify materials we want.
-            obj.traverse(node => {
-              if (node.name.indexOf('ship') !== -1) {
-                node.material.color.set('red');
-              }
-            });
-          });
-        }
-      });
-    </script>
+    <title>Basic Scene with Environment - A-Frame</title>
+    <meta name="description" content="Basic Scene with Environment - A-Frame">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
-    <a-scene background="color: #ECECEC">
+    <!-- Try changing the preset to one of default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, 
+         threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris. -->
+    <!-- See more environment options: https://github.com/feiss/aframe-environment-component#parameters -->
+    <a-scene environment="preset: forest">
       <a-assets>
-        <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
+        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
       </a-assets>
-      <a-entity gltf-model="#cityModel" play-all-model-animations modify-materials></a-entity>
+      
+      <a-box
+        src="#boxTexture"
+        position="0 2 -5"
+        rotation="0 45 45"
+        scale="2 2 2"
+        animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
+        animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
+        animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+      
+      <a-entity text="value: Hello, A-Frame; color: #FAFAFA; width: 5; anchor: align" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-entity>
+      <a-camera>
+        <a-cursor color="#FAFAFA"></a-cursor>
+      </a-camera>
     </a-scene>
   </body>
 </html>
@@ -86,48 +87,33 @@ This made a dystopian world with boxes flying in a pattern.
 
 When I saw this, I knew I had to make this one of the settings for the game.
 
-The way I changed the code was, instead of flying boxes, there were flying airplanes and the setting was the game, but I changed the background because I really liked the dystopian setting. I also stopped the flying boxes.
+The way I changed the code was, take a stater code provided by Aframe and make something interesting by combining both codes. 
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-Frame VR Scene with Airplanes</title>
-    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-    <script src="play-all-model-animations.js"></script>
-    <script>
-      AFRAME.registerComponent('modify-materials', {
-        init: function () {
-          // Wait for model to load.
-          this.el.addEventListener('model-loaded', () => {
-            // Grab the mesh / scene.
-            const obj = this.el.getObject3D('mesh');
-            // Go over the submeshes and modify materials we want.
-            obj.traverse(node => {
-              if (node.name.indexOf('ship') !== -1) {
-                node.material.color.set('red');
-              }
-            });
-          });
-        }
-      });
-    </script>
-  </head>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
   <body>
-    <a-scene background="color: #ECECEC">
-      <a-assets>
-        <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
-        <a-asset-item id="airplaneModel" src="plane.jpeg"></a-asset-item>
-      </a-assets>
+    <a-scene>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"          animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"></a-box>
+></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+       <a-sphere position=".5 1.80 -4" radius=".2" color="#000000"></a-sphere>
+      <a-sphere position="-.5 1.80 -4" radius=".2" color="#000000"></a-sphere>
 
-      <!-- City Model with Animations and Modified Materials -->
-      <a-entity gltf-model="#cityModel" play-all-model-animations modify-materials></a-entity>
+      
+      <a-cylinder src="https://i.imgur.com/mYmmbrp.jpg" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-scene>
+  <a-box color="red" position="0 2 -5" rotation="0 45 " scale="2 2 2"></a-box>
 
-      <!-- Airplane Model -->
-      <a-entity gltf-model="#airplaneModel" position="0 2 -5" rotation="0 180 0" scale="0.5 0.5 0.5"></a-entity>
-
+  
+        <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+       
+</a-scene>
     </a-scene>
   </body>
 </html>

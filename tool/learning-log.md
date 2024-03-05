@@ -306,6 +306,9 @@ I helped my partner understand what code she should try doing and practicing mor
 
 - Frame uses a right-handed coordinate system. With the default camera direction: positive X-axis extends right, positive Y-axis extends up, and the positive Z-axis extends out of the screen towards us:
 
+- decided the setting for our game level 1: Default
+
+ Disclaimer: These are all direct notes I found important from the documentation.
 
 // Everything combined
 
@@ -318,7 +321,7 @@ I helped my partner understand what code she should try doing and practicing mor
 </head>
   <body>
     <a-scene>
-<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"></a-box>></a-box>
+<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"></a-box>></a-box>// has texture
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
        <a-sphere position=".5 1.80 -4" radius=".2" color="#000000"></a-sphere>
       <a-sphere position="-.5 1.80 -4" radius=".2" color="#000000"></a-sphere>
@@ -330,19 +333,20 @@ I helped my partner understand what code she should try doing and practicing mor
   <a-box color="red" position="0 2 -5" rotation="0 45 " scale="2 2 2"></a-box>
 
 
-        <a-entity environment="preset: default; dressingAmount: 500"></a-entity>
+        <a-entity environment="preset: default; dressingAmount: 500"></a-entity>// the setting
 
-- decided the setting for our game level 1: Default
 
- Disclaimer: These are all direct notes I found important from the documentation.
 
 </a-scene>
     </a-scene>
   </body>
 </html>
 ```
+It took shelly and me an hour to decide what setting would fit our game best and after many discussions, we decided that defalt would be best to add our own buildings on.
 
 [Link to Creating Image Descriptors](https://aframe.io/blog/arjs3/)
+
+
 
 Some important things I found in the text:
 

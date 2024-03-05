@@ -95,7 +95,7 @@ I have learned how to:
 
     <a-scene reflection="directionalLight:a-light#dirlight;"></a-scene>
 	<a-light id="dirlight" intensity="1" light="castShadow:true;type:directional" position="1 1 1"></a-light>
-    
+
    ```
  * To my surprize the code didn't effect tne shapes at all.
  * I still intend to try it on my code later to see if it will change anything.
@@ -113,19 +113,19 @@ I have learned how to:
   <body>
     <a-scene background="color: #FAFAFA" environment="preset: forest">
       <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: #box"></a-entity>
-      
+
       <a-entity id="box" geometry="primitive: box" material="color: red" position="0 1.8 -3" rotation="0 30 0"
                 animation__mouseenter="property: components.material.material.color; type: color; from: red; to: blue; startEvents: mouseenter; dur: 500"
                 animation__mouseleave="property: components.material.material.color; type: color; from: blue; to: red; startEvents: mouseleave; dur: 500"
     </a-scene>
   </body> ```
 
-  
+
 * animation is really cool because you can change/ do many things like changing the color when you change the directions.
 
 
 11/25/2023
- 
+
 Tinkering on replit
 - all vr in aframe  starts with a dash
 - Ex: <a-...>
@@ -144,7 +144,7 @@ Tinkering on replit
 * Radius sets the size
 * the bigger the num the bigger the shape
 * You need color or else it's going to be white and you won't be able to see anything.
-  
+
  ```html
 <!DOCTYPE html>
 <html>
@@ -155,12 +155,12 @@ Tinkering on replit
   <title> Tinkering with VR</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
-  
+
 </head>
 
 <body>
 
-  <a-scene> 
+  <a-scene>
 
     <a-plane color="cyan" width="4" height="4" rotation="-90 0 0" position="0 0 -4"></a-plane>
 <a-box color="purple" position="-1 0.5 -2" rotation="0 45 0" ></a-box>
@@ -219,19 +219,19 @@ This makes most operations done in memory, a tiny bit similar to Virtual DOM.
 
 Keeping everythingunder a single requestAnimationFrame and letting components hook into a single global render loop via the tick handler.
 
--talk to Shelly about what I learned 
+-talk to Shelly about what I learned
 
 - Shelly and I agreed to make a demo of our project next week to know what we want to learn about next week.
-  
+
 - Shelly and I had a disagreement about what we want our next plans to be
-  
+
 - shelly want to continue learning new componenets
-  
+
 - I want to make a demo so we know which componenet will be useful for us to learn.
-  
+
 - shelly and came to the agreement that after this week we will learn how to make a small demo of how we want our project to look like, like a wire frame.
-  
--A-Frame is a JavaScript framework. 
+
+-A-Frame is a JavaScript framework.
 
 for aframe you need to use techniques used in the 3D and game industry (e.g., geometry instancing, level-of-detail, object pooling.
 
@@ -241,7 +241,7 @@ I'm following the [tutorial on making 3d buildings](https://www.youtube.com/watc
 
 Unfortunately my partner and I became busy with other schoolwork and were able to dedicate our time into making a demo of our project.
 
-In the video I what I learned from the code really interested me because it seems complicated but it only takes 90 sec to do if you learn/undertsand that concept. 
+In the video I what I learned from the code really interested me because it seems complicated but it only takes 90 sec to do if you learn/undertsand that concept.
 
 In the video, the youtuber shows how I created a 3D buildings site using Aframe.io and Blender.
 
@@ -265,48 +265,94 @@ I also learned how to make the boat seem a though it is tiliting left and right.
 
 To make an order you can use timeline to pick a order that is doing 2 animation at the same time and choose which animation should be first and last.
 
+
 From this video I was thing I can make it seem as though there is wind flowing through the trees when the aircraft is used.
 
 I shared my resources with my partner
 
 I recommended my partner which tutorials to follow
 
-I learned what a [link toan aframe tool](https://www.npmjs.com/package/aframe-supercraft-loader) is helpfu; then making a 3d world.
+### 02/25/2024
+
+I learned what a [link to an aframe tool](https://www.npmjs.com/package/aframe-supercraft-loader) is helpful then making a 3d world.
 
 Things I learned on the website:
 
-includeEnvironment-  include environment (sky, ground, lights).	
+includeEnvironment-  include environment (sky, ground, lights).
 
 includeShadows- can decide whether the mesh should receive and cast shadows.
 
-I learned that I can control the viewer's view point  with selector to <a-asset-item> or URL to Supercraft JSON.	
+I learned that I can control the viewer's view point  with selector to <a-asset-item> or URL to Supercraft JSON.
 
 Inspector tool to get a different view of the scene and see the visual effect of tweaking entities.
 
-The Inspector is similar to the browser’s DOM inspector but tailored for 3D and A-Frame. (Inspecter tool](https://github.com/aframevr/aframe-inspector)
+The Inspector is similar to the browser’s DOM inspector but tailored for 3D and A-Frame. (Inspecter tool)(https://github.com/aframevr/aframe-inspector)
 
 To modify the material of a model, we need to wait for the model to load, and then modify the three.js meshes created from the mode
 
-Sometimes textures just won’t work right off the bat. This is usually because exporters use absolute paths like C:\\Path\To\Model\texture.jpg or /Path/To/Model/texture.jpg 
+Sometimes textures just won’t work right off the bat. This is usually because exporters use absolute paths like C:\\Path\To\Model\texture.jpg or /Path/To/Model/texture.jpg
 
 I helped my partner understand what code she should try doing and practicing more with through a yellkey.
 
 
-02/24/2024
+### 03/04/2024
 
-* Learning how to set up a frame componet from scratch 
+* Learning how to set up a frame componet from scratch
 [Link to Building a Basic Scene](https://aframe.io/docs/1.5.0/guides/building-a-basic-scene.html)
 [Link to learning aframe html](https://aframe.io/docs/1.5.0/introduction/html-and-primitives.html)
 * Tip: Even if the text is really long try to read it because it's really helpful.
 -  we include <a-scene> in the <body>. <a-scene> will contain every entity in our scene.
- <a-scene> handles all of the setup that is required for 3D: setting up WebGL, the canvas, camera, lights, 
+ <a-scene> handles all of the setup that is required for 3D: setting up WebGL, the canvas, camera, lights,
 
 - Frame uses a right-handed coordinate system. With the default camera direction: positive X-axis extends right, positive Y-axis extends up, and the positive Z-axis extends out of the screen towards us:
 
 
+// Everything combined
 
+```HTML
+
+ <html>
+  <head>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+  <body>
+    <a-scene>
+<a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"></a-box>></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+       <a-sphere position=".5 1.80 -4" radius=".2" color="#000000"></a-sphere>
+      <a-sphere position="-.5 1.80 -4" radius=".2" color="#000000"></a-sphere>
+
+
+      <a-cylinder src="https://i.imgur.com/mYmmbrp.jpg" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-sky color="#ECECEC"></a-sky>
+      <a-scene>
+  <a-box color="red" position="0 2 -5" rotation="0 45 " scale="2 2 2"></a-box>
+
+
+        <a-entity environment="preset: default; dressingAmount: 500"></a-entity>
+
+- decided the setting for our game level 1: Default
 
  Disclaimer: These are all direct notes I found important from the documentation.
+
+</a-scene>
+    </a-scene>
+  </body>
+</html>
+```
+
+[Link to Creating Image Descriptors](https://aframe.io/blog/arjs3/)
+
+Some important things I found in the text:
+
+* Location-based tracking uses real-world coordinates to place AR content in context. Users can move freely (outdoors for better precision) and content associated with their location will be scaled and placed accordingly (e.g: content will render bigger / smaller based on distance to the user).
+
+* Replace <add-your-latitude> and <add-your-longitude> with your GPS coordinates. Gte data from `latlong` to get data.
+
+* Change the scale property according to the distance of the place you specified with the coordinates: if you are not seeing the text, try to scale it up or choose a place much near.
+
+* We used the custom look-at A-Frame component, that makes the content always look towards the user camera. This is fundamental, in particular for 2D content as text.
 
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover

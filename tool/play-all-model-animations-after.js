@@ -13,7 +13,7 @@
 
 
       <a-cylinder src="https://i.imgur.com/mYmmbrp.jpg" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-plane position="0 0 -4" rotation="-90 0 0" /width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
       <a-scene>
   <a-box color="red" position="0 2 -5" rotation="0 45 " scale="2 2 2"></a-box>

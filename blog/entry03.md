@@ -1,6 +1,6 @@
 
 # Entry 3
-##### 03/12/24
+##### 02/12/24
 
 My current stage in the Engineering Design Process (EDP) is understanding and making a game plan for my game. A little recap of what my project is: a game that uses A-Frame. My partner and I aim to create a stress-relieving shooting game. We plan on making a 3D simulation of our game with stages featuring unique backgrounds. To learn my tool, I had to understand how A-Frame works and the components A-Frame uses. To get a better understanding of my tool (A-Frame), I read documentations made by the developer. I learned many interesting things, such as:
 Although it is hard to find more resources that can teach me about how to use A-frame to make a shooting score or how to shoot. I plan on asking other people on the Aframe slack if they know/have ever made a game that keeps score through Aframe. If that doesn't work out as plan I will try to google for more resources.
@@ -41,7 +41,7 @@ Learning all of these details helped me understand the fundamentals of A-Frame a
 ## CONTENT:
 
  My partner and I are using A-Frame to make a 3D simulation of a game. We want to create a shooting game that can help release pent-up stress from school, work, and etc. Our goal is to make a game that is interesting and relaxing. It may sound ironic that a shooting game can be relaxing, but all of the frustration and anger or stress can be let out through playing games. According to the article [How Do Video Games Reduce Stress?](https://www.healthygamer.gg/blog/do-video-games-reduce-stress#:~:text=When%20we%20play%20a%20video,the%20stresses%20of%20the%20day.), we are going to use games that have already been made through A-Frame to take inspiration and eventually make a game that has 360 images where you can move and interact with objects like cars, airplanes, and guns. We will be using A-Frame to create a 360-degree interactive game featuring moving and interactable items such as vehicles, aircraft, and firearms.
- 
+
 While working on researching A-Frame, I came across a really interesting code:
 
 * [link-to-the-pre-tinkering](https://github.com/shubataf2489/sep11-freedom-project/blob/main/tool/play-all-model-animations-pre.js)
@@ -59,14 +59,14 @@ While working on researching A-Frame, I came across a really interesting code:
     <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
   </head>
   <body>
-    <!-- Try changing the preset to one of default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, 
+    <!-- Try changing the preset to one of default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine,
          threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris. -->
     <!-- See more environment options: https://github.com/feiss/aframe-environment-component#parameters -->
     <a-scene environment="preset: forest">
       <a-assets>
         <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
       </a-assets>
-      
+
       <a-box
         src="#boxTexture"
         position="0 2 -5"
@@ -75,7 +75,7 @@ While working on researching A-Frame, I came across a really interesting code:
         animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"
         animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
         animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
-      
+
       <a-entity text="value: Hello, A-Frame; color: #FAFAFA; width: 5; anchor: align" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-entity>
       <a-camera>
         <a-cursor color="#FAFAFA"></a-cursor>
@@ -93,7 +93,7 @@ I changed the code by adding a box that can go up and down and attempt to make a
 
 When I saw this, I knew I had to make this one of the settings for the game.
 
-The way I changed the code was, take a stater code provided by Aframe and make something interesting by combining both codes. 
+The way I changed the code was, take a stater code provided by Aframe and make something interesting by combining both codes.
 
 ```html
 <html>
@@ -109,16 +109,16 @@ The way I changed the code was, take a stater code provided by Aframe and make s
        <a-sphere position=".5 1.80 -4" radius=".2" color="#000000"></a-sphere>
       <a-sphere position="-.5 1.80 -4" radius=".2" color="#000000"></a-sphere>
 
-      
+
       <a-cylinder src="https://i.imgur.com/mYmmbrp.jpg" position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
       <a-scene>
   <a-box color="red" position="0 2 -5" rotation="0 45 " scale="2 2 2"></a-box>
 
-  
+
         <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
-       
+
 </a-scene>
     </a-scene>
   </body>

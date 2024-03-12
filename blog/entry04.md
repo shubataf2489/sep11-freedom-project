@@ -10,7 +10,7 @@ Every weekend, my partner and I call each other and share our screen every time 
 
 ### Content
 
-[Link to code](../3d-site/index.html)
+[Link to code](https://github.com/shubataf2489/3d-site/blob/main/index.html)
 
 ```html
 

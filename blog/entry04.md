@@ -100,16 +100,24 @@ For example, on Mondays, we discussed what we worked on so far and split up all 
 
 - Time management: Since I can't work only on the project, I'm trying to split up my work throughout the day. On Mondays, I try to find new findings or tutorials to work on, and whenever I have the time, I work on them. On Saturdays, my partner and I call to work and make progress on our project. On Sundays, I reflect on what I learned and take note of the useful things I learned.
 
+
+## Steps done:
+
+So far, my partner and I are on track with our plan. Our objective was to work on creating the setting for (2/26 - 3/21) three weeks. Since the setting is going to be the foundation of our game, we wanted to take our time with it.
+
+We thought that following a tutorial on making 3D buildings would make it easy for us to create the setting, but it wasn't helpful. So, we had to try other methods. We used shapes and our creativity instead of relying on the tutorial.
+
+We are a little ahead of schedule because we have already started coding our roads, which we were supposed to start coding next week.
+
 ## Next steps:
-
+Over the course of the next 2 weeks (03/10- 03/24), my partner and I want to learn the components and learn how to:
 - Making the game look realistic by adding characters, trees, cars, roads, target
-
 - Learn geometry component to help make cars
 - Also, we want to work on learning animation for making moving trees and a moving car.
-Over the course of 2 weeks, my partner and I want to learn the components:
 - Person (POV) - controls the camera/viewpoint
 - Hand-controls - to help the player move the player’s movement
 - Reflection - makes the characters stand out from the background by putting more light on top of them and adding a shadow.
+
 
 [Previous](entry03.md) | [Next](entry05.md)
 

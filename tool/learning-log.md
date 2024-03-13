@@ -118,7 +118,8 @@ I have learned how to:
                 animation__mouseenter="property: components.material.material.color; type: color; from: red; to: blue; startEvents: mouseenter; dur: 500"
                 animation__mouseleave="property: components.material.material.color; type: color; from: blue; to: red; startEvents: mouseleave; dur: 500"
     </a-scene>
-  </body> ```
+  </body>
+  ```
 
 
 * animation is really cool because you can change/ do many things like changing the color when you change the directions.

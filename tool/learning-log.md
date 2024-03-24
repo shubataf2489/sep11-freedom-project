@@ -378,6 +378,20 @@ Some important things I found in the text:
 ```
 This is the coded that made my rectangular prism look similar  to a building.
 
+
+### 03/24/2024
+
+* The main thing I focused on this week was making making a city.
+* I downloaded many building textures.
+* I made many build blocks with different sizes and shapes
+* This gave the illusion of a realistic city.
+* I also didn't make the buidlings aligned with each other
+* I some placed them in the back and some in the front to make the city look more realistic.
+* A lot fo them didn't look, so I had to delete them.
+* I had trial and see if the buidling texture would duit the aesthetic.
+* The ones that did look good I saved them.
+* This process took me a while to do
+* While I worked on the Buildings, my partner focused on maing the car layout
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover
 page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,

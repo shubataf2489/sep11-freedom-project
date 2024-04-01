@@ -392,6 +392,18 @@ This is the coded that made my rectangular prism look similar  to a building.
 * The ones that did look good I saved them.
 * This process took me a while to do
 * While I worked on the Buildings, my partner focused on maing the car layout
+
+
+### 03/31/2024
+
+* () https://supermedium.com/aframe-super-shooter-kit/examples/supercraft/
+
+* () https://www.youtube.com/watch?v=q3bjSDTgUAg
+* () https://www.youtube.com/watch?v=SeV7RmjxfTY
+* () https://github.com/supermedium/aframe-super-shooter-kit
+* ()https://www.youtube.com/watch?v=t5Hou5QsRiE
+*
+
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover
 page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,

@@ -407,14 +407,14 @@ This is the coded that made my rectangular prism look similar  to a building.
 * (Tutorial 3 ) [https://www.youtube.com/watch?v=SeV7RmjxfTY]
 * (Tutorial 4 ) [https://github.com/supermedium/aframe-super-shooter-kit]
 * (Tutorial 5 ) [https://www.youtube.com/watch?v=t5Hou5QsRiE]
-* Terms:
+     ### Terms:
 * damagePoints -How many health points to remove from target when hitting target.
 * maxTime-Life time of bullet in seconds. When elapsed, the bullet will be removed.
 * poolSize -How many copies of this bullet can be on screen at once.
 * speed- Speed of bullet in meters per second.
 * hit	Target was hit by a bullet.
 * die	Target ran out of healthPoints and has been destroyed.
-  
+
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover
 page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,

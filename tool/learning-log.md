@@ -395,15 +395,26 @@ This is the coded that made my rectangular prism look similar  to a building.
 
 
 ### 03/31/2024
-
-* () https://supermedium.com/aframe-super-shooter-kit/examples/supercraft/
-
-* () https://www.youtube.com/watch?v=q3bjSDTgUAg
-* () https://www.youtube.com/watch?v=SeV7RmjxfTY
-* () https://github.com/supermedium/aframe-super-shooter-kit
-* ()https://www.youtube.com/watch?v=t5Hou5QsRiE
-*
-
+* My partner and I decided to do call to discuss the nest steps as we are almost done with the setting.
+* We need to figure out the shooting side of the game to be able to finish the setting.
+* Figuring out a way to create a shooting game in Aframe was a big challenge.
+* I had to watch many videos and thankfull some people have created a shooting game using Aframe.
+* The problem was the website that has the explicit explanation on how to code a shooting game is down.
+*  My partner and I are in hopes that the website gets back up but if not we are on the journey to find other videos to teach us.
+* These are some of the tutorials that I found useful:
+* (Tutorial 1) [https://supermedium.com/aframe-super-shooter-kit/examples/supercraft/]
+* (Tutorial 2) [https://www.youtube.com/watch?v=q3bjSDTgUAg]
+* (Tutorial 3 ) [https://www.youtube.com/watch?v=SeV7RmjxfTY]
+* (Tutorial 4 ) [https://github.com/supermedium/aframe-super-shooter-kit]
+* (Tutorial 5 ) [https://www.youtube.com/watch?v=t5Hou5QsRiE]
+* Terms:
+* damagePoints -How many health points to remove from target when hitting target.
+* maxTime-Life time of bullet in seconds. When elapsed, the bullet will be removed.
+* poolSize -How many copies of this bullet can be on screen at once.
+* speed- Speed of bullet in meters per second.
+* hit	Target was hit by a bullet.
+* die	Target ran out of healthPoints and has been destroyed.
+  
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover
 page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,

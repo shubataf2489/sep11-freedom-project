@@ -415,6 +415,38 @@ This is the coded that made my rectangular prism look similar  to a building.
 * hit	Target was hit by a bullet.
 * die	Target ran out of healthPoints and has been destroyed.
 
+### 04/08/2024
+
+
+1. **A-Frame Setup**: 
+   - The HTML file sets up an A-Frame scene using `<a-scene>`.
+   - A-Frame framework and A-Frame GUI component are included via script tags.
+  
+2. **Camera and Controls**:
+   - The camera entity is created using `<a-entity camera>`.
+   - `look-controls` and `wasd-controls` components are added for mouse-based look and WASD movement.
+
+3. **Gun Representation**:
+   - The gun is represented by a gray box with `<a-entity>` tag.
+   - Its position, scale, and color are defined using `position`, `scale`, and `material` attributes.
+
+4. **Targets**:
+   - Two target entities are created with the class `.target`.
+   - They are represented by colored boxes (`<a-entity>`) positioned in the scene.
+   - Each target's position, scale, and color are defined using attributes.
+
+5. **GUI Button**:
+   - A GUI button is created using `<a-gui-button>` tag.
+   - It's positioned in front of the camera using `position` attribute.
+   - When clicked (`onmouseup` event), the `shoot()` function is triggered.
+
+6. **JavaScript Function `shoot()`**:
+   - This function is triggered when the shoot button is clicked.
+   - It finds all elements with the class `.target`.
+   - It iterates through each target and calculates the distance between the gun and the target.
+   - If the distance is less than a threshold (in this case, 2 units), the target is removed from the scene (`removeChild()`).
+
+
 <!--
 This script places a badge on your repl's full-browser view back to your repl's cover
 page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,

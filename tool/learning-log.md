@@ -449,7 +449,7 @@ This is the coded that made my rectangular prism look similar  to a building.
 ### Apr 14 2024
 
 
-### Goals:
+### Goals/How to accomplish them:
 
 1. **Optimization and Performance**:
    - For larger scenes or complex interactions, consider optimizing the code for better performance.

@@ -93,5 +93,10 @@ Adding another player to the website
 
 
 
+## To-do list
+### animation - 9/10
+### Cars - 5/10
+### Jumping-7/10
+#### Soild buildings - 2/10
 
 

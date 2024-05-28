@@ -99,22 +99,7 @@
     </a-scene>
 
     <script>
-      AFRAME.registerComponent('bullet', {
-        init: function () {
-          const bullet = this.el;
-          bullet.addEventListener('collide', function (e) {
-            const target = e.detail.body.el;
-            if (target && target.id === 'target') {
-              target.setAttribute('visible', 'false');
-              setTimeout(() => {
-                if (target.parentNode) {
-                  target.parentNode.removeChild(target);
-                }
-              }, 500);
-            }
-          });
-        }
-      });
+
 
       AFRAME.registerComponent('shoot', {
         init: function () {
@@ -239,28 +224,6 @@
   //new code
 
 
-       AFRAME.registerComponent('score-counter', {
-      schema: {
-        el: {
-          type: 'selector'
-        },
-        score:{
-          type: 'int',
-          default: 0
-        },
-      },
-
-      init: function () {
-        var sceneEl = document.querySelector('a-scene');
-        var scoreBoard = document.querySelector('#score');
-
-        sceneEl.querySelector('a-icosahedron').addEventListener('click', () => {
-          this.data.score++;
-          var newScore = 'Score: ' + this.data.score
-          scoreBoard.setAttribute('text', 'value',  newScore)
-        })
-      }
-    });
 
 
 

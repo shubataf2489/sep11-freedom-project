@@ -70,19 +70,13 @@ Below you will find my blog about how I made my project.
 # Timeline:
 This document is due F 2/16
 Your actual MVP is due W 5/1
-M = minimum. It’s not much. You probably have lots of ideas to improve it.
-V = viable. It works. It functions. No bugs.
-P = product. You made it. Be proud!
 
 
-Directions: Use this document to help you plan your MVP by answering the questions below.
 
 ### Tool: Aframe
 ### Product: A shooter game that is entertaining and stress reducing to play.
-### Example: a web application that turns the verbal Green Glass Door riddle into a digital version.
 
 
-https://github.com/shubataf2489/sep11-freedom-project/blob/main/blog/entry03.md
 
 
 				 	PLAN

@@ -1,7 +1,10 @@
 # Overview
 ##### 06/03/2024
 
-## My Freedom Project: Creating a Decompression Game
+## Name: Shubata Fizin
+## Course: Javascript
+## Period: 03
+## Concept: My Freedom Project: Creating a Decompression Game
 
 My Freedom Project’s main goal is to create a decompression game. We designed an interesting city with a unique landscape for people to explore. Additionally, we developed a shooting game where players can take out their frustration by shooting targets. Unfortunately, we faced complications with adding music to make the game more relaxing, so it had to be removed.
 

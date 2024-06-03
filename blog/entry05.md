@@ -194,6 +194,12 @@ function setup() {
 }
 ```
 
+### Skill:
+
+Time management: We both followed a strict schedule and both worked on our project at different times when we couldn't work together and when we could we would share  our discoveries.
+
+
+Communication: I had to communicate and collaborate and share my findings with my partner on many occasions to ensure we were on the same page. As I have mentioned before, every weekend my partner and I call each other and share our screen every time we code to show each other what we are doing. Calling each other makes us accountable to do the work. Each week we alternate on who leads. On week one, Shelly took the lead on selecting a background that will be best for our game and I listed the pros and cons of each setting. Shelly also started on making a model of a building. In week two, I took the lead on making a design for the building and making the road in our game.
 
 ### Takeaway:
 

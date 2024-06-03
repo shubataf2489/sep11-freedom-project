@@ -62,7 +62,6 @@ Below you will find my blog about how I made my project.
 
 
 
-# Timeline
 
 # HSTAT SEP | SEP11
 # Freedom Project MVP Plan
